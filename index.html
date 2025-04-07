@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Weather Dashboard</h1>
+
+    <div id="app">
+        <!-- Fetch Weather Section -->
+        <section id="fetchSection">
+            <h2>Fetch Weather Data by City</h2>
+            <form id="fetchWeatherForm">
+                <input type="text" id="cityName" placeholder="Enter City Name" required>
+                <button type="submit">Fetch Weather</button>
+            </form>
+            <ul id="weatherData"></ul>
+        </section>
+
+        <!-- Add Local Weather Section -->
+        <section id="addSection">
+            <h2>Add Local Weather</h2>
+            <form id="addWeatherForm">
+                <input type="text" id="addCity" placeholder="City Name" required>
+                <input type="number" id="addTemperature" placeholder="Temperature (°C)" required>
+                <button type="submit">Add</button>
+            </form>
+            <ul id="localWeatherData"></ul>
+        </section>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,154 @@
+/* General Body Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e2e8f0; /* Darker light grayish background */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Main Heading */
+h1 {
+    text-align: center;
+    color: #4a90e2; /* Blue color */
+    font-size: 2.5em;
+    margin-top: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Section Styling */
+section {
+    margin: 20px auto;
+    padding: 25px;
+    max-width: 800px;
+    background: #ffffff; /* White background for section */
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+}
+
+/* Button Styling */
+button {
+    padding: 12px 25px;
+    background-color: #007bff; /* Blue */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue */
+}
+
+/* Form and Input Styling */
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+form input {
+    padding: 12px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    width: 100%;
+    max-width: 300px;
+    background-color: #f9fafb; /* Very light gray for input */
+}
+
+form input:focus {
+    outline: none;
+    border-color: #007bff; /* Blue border on focus */
+}
+
+form button {
+    background-color: #28a745; /* Green */
+}
+
+form button:hover {
+    background-color: #218838; /* Darker green */
+}
+
+/* Weather Data List Styling */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    margin: 12px 0;
+    padding: 15px;
+    background: #ffffff; /* White background for list item */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.1em;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+li strong {
+    color: #007bff; /* Blue for city names */
+    font-size: 1.2em;
+}
+
+li button {
+    background-color: #ff6f61; /* Red for delete button */
+    color: white;
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+li button:hover {
+    background-color: #e05a49; /* Darker red */
+}
+
+/* Add Local Weather Styling */
+#addSection input {
+    max-width: 250px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    form input {
+        max-width: 100%;
+    }
+
+    button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    li {
+        font-size: 1em;
+        padding: 10px;
+    }
+}
